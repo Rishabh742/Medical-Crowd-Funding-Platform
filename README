@@ -1,0 +1,75 @@
+1. Core Terminologies in Medical Crowdfunding Platforms
+1.1 Crowdfunding-Specific Terms
+Campaign: A fundraising initiative created by a user or organization to collect donations for a medical cause.
+Fundraiser: The individual or group organizing the campaign.
+Backer/Donor: A person who donates money to support a campaign.
+Goal Amount: The target amount that needs to be raised for a specific cause.
+Donation Tracker: A progress bar or display showing how much has been raised versus the goal.
+Recurring Donations: A feature allowing donors to contribute on a scheduled basis (e.g., monthly).
+Anonymous Donations: An option for donors to contribute without revealing their identity.
+Withdrawal & Payouts: The process of transferring raised funds to the campaign organizer's bank account.
+1.2 WordPress-Specific Terminologies
+Themes: Pre-designed templates that control the layout and appearance of the website (e.g., Astra, Divi, or custom-built themes).
+Plugins: Add-ons that enhance website functionality (e.g., WP Crowdfunding, GiveWP, Charitable).
+Custom Post Types (CPT): Special content structures in WordPress, such as campaigns, donors, or testimonials.
+Shortcodes: Small code snippets used to embed donation forms or campaign lists into pages.
+Widgets: Small components (e.g., recent campaigns, progress bars) that can be placed in sidebars or footers.
+Page Builder: Tools like Elementor or WPBakery used to design pages without coding.
+1.3 Frontend Development (HTML, CSS, JavaScript)
+HTML (HyperText Markup Language)
+
+Forms (<form>): Used for user registrations, donations, and campaign submissions.
+Tables (<table>): For displaying donation history or leaderboards.
+Divs (<div>): Layout containers for structuring pages.
+Input Fields (<input>): Fields for donor name, amount, payment details.
+CSS (Cascading Style Sheets)
+
+Flexbox/Grid Layout: Ensures a responsive and structured layout.
+Animations (@keyframes): Used for smooth effects like fading progress bars.
+Media Queries (@media): Makes the website mobile-friendly.
+JavaScript
+
+DOM Manipulation: Updates elements dynamically, e.g., updating donation progress.
+AJAX Requests: Sends/receives data from the server without page refresh (used for live donation updates).
+Form Validation: Ensures proper inputs in donation and campaign forms.
+Payment Gateway Integration: Uses JavaScript SDKs from Stripe, PayPal, or Razorpay.
+2. Website Features and Components
+2.1 User Management
+User Roles:
+
+Admin: Manages the platform, verifies campaigns, and handles withdrawals.
+Campaign Creator: Submits and manages fundraising campaigns.
+Donor: Supports campaigns through donations.
+Authentication & Security
+
+Login/Register: Users create accounts to start campaigns or donate.
+Two-Factor Authentication (2FA): Extra security layer for users.
+Email Verification: Ensures authenticity of users.
+2.2 Donation & Payment Processing
+Payment Gateways: Integrated third-party services like PayPal, Stripe, Razorpay for processing donations.
+Transaction Processing: Ensures secure money transfer via encryption (SSL).
+Receipt Generation: Auto-generated receipts sent via email for donor records.
+2.3 Campaign Page Components
+Each campaign page typically contains:
+
+Title & Description: The reason for fundraising.
+Goal vs. Raised Amount: A visual progress bar showing donation status.
+Donate Button: A call-to-action (CTA) leading to a secure payment form.
+Recent Donors List: Shows people who have contributed (if not anonymous).
+Sharing Buttons: Enables users to share campaigns via WhatsApp, Facebook, Twitter.
+Comment & Updates Section: Allows campaign creators to post updates on their progress.
+2.4 Backend & Database (WordPress)
+Database Tables (MySQL)
+
+wp_users – Stores user details.
+wp_campaigns – Contains campaign data.
+wp_donations – Tracks all donations.
+wp_transactions – Records payment processing.
+REST API Usage
+
+Retrieves campaign details (GET /wp-json/wp/v2/campaigns)
+Posts new donations (POST /wp-json/wp/v2/donations)
+2.5 Security Measures
+SSL Encryption: Protects user data.
+CSRF Protection: Prevents fake donation form submissions.
+Data Validation: Prevents malicious script injections.
